@@ -1,6 +1,6 @@
 # HEXY.PRO - The Open-Source Hexagonal Map Creator
 
-![HEXY.PRO Screenshot](url)
+![HEXY.PRO Screenshot](/banner.png)
 
 Welcome to **HEXY.PRO**, a powerful and intuitive hexagonal map creator designed for world-builders, game developers, and TTRPG masters. What started as a commercial project has now been reborn for the community. We've gone open-source to empower creators everywhere, and we're inviting you to help us shape its future!
 
