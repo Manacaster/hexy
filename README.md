@@ -1,6 +1,6 @@
 # HEXY.PRO - The Open-Source Hexagonal Map Creator
 
-![HEXY Screenshot](url)
+![HEXY.PRO Screenshot](url)
 
 Welcome to **HEXY.PRO**, a powerful and intuitive hexagonal map creator designed for world-builders, game developers, and TTRPG masters. What started as a commercial project has now been reborn for the community. We've gone open-source to empower creators everywhere, and we're inviting you to help us shape its future!
 
@@ -61,8 +61,8 @@ Ready to jump in? Here's how to get the development environment running.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/your-username/hexy-pro.git
-    cd hexy-pro/app
+    git clone https://github.com/Manacaster/hexy.git
+    cd hexy/app
     ```
 
 2.  **Install Dependencies:**
@@ -71,7 +71,7 @@ Ready to jump in? Here's how to get the development environment running.
     ```
 
 3.  **Set Up Supabase:**
-    -   Go to [Supabase.io](https://supabase.io/) and create a new project.
+    -   Go to [Supabase.com](https://supabase.com/) and create a new project.
     -   In the root of the `/app` folder, create a new file named `.env`.
     -   Find your project's API URL and `anon` key in your Supabase project's "API Settings".
     -   Add them to your `.env` file:
@@ -79,7 +79,7 @@ Ready to jump in? Here's how to get the development environment running.
         VITE_SUPABASE_URL=YOUR_SUPABASE_URL
         VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
         ```
-    -   You will also need to run the SQL queries from the previous step to set up the necessary database tables.
+    -   Run the SQL queries provided in the `supabase_setup` directory to create the necessary tables and policies. *(Note: We will be adding these files in a future commit.)*
 
 4.  **Run the Development Server:**
     ```bash
