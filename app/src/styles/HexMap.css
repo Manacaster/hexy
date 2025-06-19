@@ -1,0 +1,70 @@
+/* HEXY.PRO App - /app/src/styles/HexMap.css */
+  
+
+.hex-map-container {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  /* Optionally, you can add styles to allow text selection for specific elements if needed */
+  .allow-select {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+  }
+
+.controls-vertical {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(0 0 0 / 64%);
+  padding: 10px;
+  border-radius: 5px;
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+  width: 250px;
+}
+
+.collapsible-section {
+  margin-bottom: 10px;
+}
+
+.collapsible-header {
+  width: 100%;
+  text-align: left;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.collapsible-content {
+  padding: 5px;
+}
+
+.control-group {
+  margin-bottom: 5px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.control-group input[type="range"],
+.control-group select {
+  width: 100%;
+}
+
+.regenerate-button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.toggle-btn-settings {
+  width: 100%;
+  margin-top: 10px;
+}

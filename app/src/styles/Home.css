@@ -1,0 +1,149 @@
+/* HEXY.PRO App - /app/src/styles/Home.css */
+  
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text-primary);
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .home-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-card {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .feature-link {
+    display: inline-block;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-section {
+    text-align: center;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  .home-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--bg-secondary);
+    padding-top: 1rem;
+  }
+  
+  .home-footer nav a {
+    margin-left: 1rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  
+  .home-footer nav a:hover {
+    color: var(--accent-primary);
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 1rem;
+    }
+  
+    .home-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta-section {
+      padding: 2rem;
+    }
+  
+    .home-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-footer nav {
+      margin-top: 1rem;
+    }
+  
+    .home-footer nav a {
+      margin: 0 0.5rem;
+    }
+  }

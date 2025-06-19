@@ -1,0 +1,142 @@
+/* HEXY.PRO App - /app/src/styles/Subscriptions.css */
+  
+
+.subscriptions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .subscriptions-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .subscriptions-header h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .subscriptions-header p {
+    font-size: 1.1rem;
+    color: #cccccc;
+  }
+  
+  .pricing-tiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .pricing-tier {
+    background-color: #1a1a1ab0;
+    border: 4px solid #2121218a;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .pricing-tier.highlighted {
+    border-color: #3b82f6;
+    background-image: url(/probg.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: contain;
+  }
+  
+  .pricing-tier h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-tier p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-tier .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-tier ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .pricing-tier li {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pricing-tier li::before {
+    content: "✓";
+    color: #3b82f6;
+    margin-right: 0.5rem;
+  }
+  
+  .pricing-tier button {
+    background-color: #162641;
+    background-image: url(/subbtnbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+    color: #ffffff;
+    border: 2px #3b82f6 solid;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pricing-tier button:hover {
+    background-color: #2e54a7;
+    background-image: url(/subbtnbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:color-burn;
+  }
+  .feature-list {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .feature-divider {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #3b82f6;
+    font-size: 1.1em;
+    
+  }
+  
+  .feature-list li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+    filter: blur(4px);
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-tiers {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-tier {
+      width: 100%;
+      max-width: 400px;
+    }
+  }

@@ -1,0 +1,156 @@
+/* HEXY.PRO App - /app/src/styles/CollectionManager.css */
+  
+
+.collection-manager {
+  position: fixed;
+  left: 303px;
+  top: 15px;
+  width: 304px;
+  background-color: #1a1a1ab0;
+  color: white;
+  padding: 10px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  z-index: 1000;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 4px solid #2121218a;
+  backdrop-filter: blur(10px);
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  transition: height 0.3s ease-in-out;
+}
+
+.collection-manager.minimized {
+  height: 40px;
+  overflow: hidden;
+}
+
+.collection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.collection-header h2 {
+  margin: 0;
+  font-weight: 400;
+  align-self: start;
+}
+
+.collection-header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.new-collection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.new-collection input {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-collection button,
+.collection-actions button {
+  background-color: #162641;
+  background-image: url(/subbtnbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:lighten;
+  color: #ffffff;
+  border: 2px #3b82f6 solid;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-collection button:hover,
+.collection-actions button:hover {
+  background-color: #2e54a7;
+  background-image: url(/subbtnbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:color-burn;
+}
+
+.collection-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.collection-list li {
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.collection-list li.selected {
+  background-color: #2e54a7;
+  border-radius: 5px;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.collection-item:hover {
+  background-color: #2e54a7;
+}
+
+.collection-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.tile-preview {
+  margin-top: 10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+}
+
+.collection-list li.selected .tile-preview {
+  max-height: 500px;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 5px;
+}
+
+.tile-thumbnail {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tile-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.tile-thumbnail.selected {
+  border: 2px solid #3b82f6;
+}

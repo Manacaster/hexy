@@ -1,0 +1,22 @@
+/* HEXY.PRO App - /app/src/index.css */
+  
+
+@import './darkTheme.css';
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 600px;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

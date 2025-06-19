@@ -1,0 +1,193 @@
+/* HEXY.PRO App - /app/src/styles/Controls.css */
+  
+
+.controls-vertical {
+  top: 120px;
+  left: 20px;
+  position: fixed;
+  width: 280px;
+  background-color: #1a1a1ab0;
+  color: white;
+  padding: 9px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 1000;
+  overflow-y: auto;
+  border: 4px solid #2121218a;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  max-height: calc(100vh - 140px);
+}
+
+.controls-vertical button {
+  background-color: #162641;
+  border-radius: 0px !important;
+  background-image: url(/subbtnbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:lighten;
+  color: #ffffff;
+  border: 2px #3b82f6 solid;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls-vertical button:hover {
+  background-color: #2e54a7;
+  background-image: url(/subbtnbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:color-burn;
+}
+
+.controls-vertical.minimized {
+  top: 120px;
+    height: 40px;
+    overflow: hidden;
+    padding-bottom: 14px;
+    padding-top: 5px;
+}
+
+.toggle-btn {
+position: relative;
+    align-self: revert;
+    background-color: #3d3d3d75;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 43px;
+    margin-bottom: -38px;
+    margin-top: -2px;
+    border: 2px #414141 solid;
+    backdrop-filter: blur(12px);
+    z-index: 100;
+
+}
+.toggle-btn-settings {
+  position: relative;
+  background-color: #00000075;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  border: 2px #414141 solid;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.control-group label {
+  font-weight: bold;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.control-group input[type="text"],
+.control-group select {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.control-group select {
+  appearance: none;
+  padding-right: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.regenerate-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.regenerate-button:hover {
+  background-color: #2563eb;
+}
+
+.floating-edit-buttons {
+  position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1001;
+    background-color: #141414b8;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px #454343c2 solid;
+    backdrop-filter: blur(11px);
+}
+
+.edit-button {
+  background-color: #10264b6e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  backdrop-filter: blur(10px);
+  border: 2px #374b79 solid;
+}
+
+.edit-button:hover,
+.edit-button.active {
+  background-color: #1344afa6;
+    border: 3px #4670d1 solid;
+}
+
+.collapsible-section {
+  background-color: #00000000;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.collapsible-header {
+  background-color: #1c1c1f;
+  color: white;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.collapsible-header:hover {
+  background-color: #2e2e32;
+}
+
+.collapsible-content {
+  padding: 15px;
+  background-color: #00000000;
+  border-top: 1px solid #3a3a3e;
+}
